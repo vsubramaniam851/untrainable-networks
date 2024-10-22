@@ -6,7 +6,7 @@
 [Colin Conwell](https://colinconwell.github.io/),
 [Tomaso Poggio](https://poggio-lab.mit.edu/people/tomaso-poggio),
 [Boris Katz](https://people.csail.mit.edu/boris/boris.html),
-[Brian Cheung](https://briancheung.github.io/)
+[Brian Cheung](https://briancheung.github.io/),
 [Andrei Barbu](http://0xab.com/)
 
 This is the implementation of our paper "Training the Untrainable: Introducing Inductive Bias via Representational Alignment". We introduce a method called *Guidance* where we guide an untrainable network usng representational alignment (via centered-kernel alignment) during supervised training. We include two sets of experiments in the paper: (1) fully-connected networks and deep convnets trained on ImageNet and (2) transformers/RNNs trained for sequence modeling.
@@ -17,10 +17,10 @@ We recommend creating a new conda/pip environment. We use python 3.9 and pytorch
 pip install -r requirements.txt
 ```
 
-To run experiments, we used 4 H100 GPUs. Unfortunately, 
+To run experiments, we used 4 H100 GPUs. 
 
 ## Guidance Overview
-To see an example of guidance between two networks and substitute your own, we include an overview notebook as well as make it a Google Colab notebook (both coming soon!). Feel free to subtitute your own metrics outside of CKA!
+To see an example of guidance between two networks and substitute your own, we include an overview notebook (`notebooks/guidance_overview.ipynb`) as well as make it a Google Colab [notebook](https://colab.research.google.com/drive/1jxDeRZzhh5vozcbk_WNg86k11R1ja_3Q?usp=sharing). Feel free to subtitute your own metrics outside of CKA!
 
 ## Image Classification Experiments
 To run experiments with ImageNet, run
